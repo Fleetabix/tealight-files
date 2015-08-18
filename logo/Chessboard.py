@@ -12,6 +12,8 @@ def grid(rows, columns, width):
     move(width/rows)
     turn(-90)
     move(width)
+    move(-(width))
+    
   
 
 
