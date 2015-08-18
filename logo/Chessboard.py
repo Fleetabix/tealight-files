@@ -9,7 +9,7 @@ def polygon(edges, size):
 def grid(rows, columns, width):
   for i in range(0,columns):
     turn(90)
-    move(width/rows)
+    move(width/columns)
     turn(-90)
     move(width)
     move(-(width))
