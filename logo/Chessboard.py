@@ -7,10 +7,12 @@ def polygon(edges, size):
     turn(angle)
    
 def grid(rows, columns, width):
-  turn(90)
-  move(width/rows)
-  turn(-90)
-  move(width)
+  for i in range(0,columns):
+    turn(90)
+    move(width/rows)
+    turn(-90)
+    move(width)
+  
 
 
 polygon(4,200)
