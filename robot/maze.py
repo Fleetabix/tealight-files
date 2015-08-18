@@ -15,7 +15,7 @@ while True:
   if right_side() != "wall":
     turn(1)
   if right_side() != "wall" and left_side() != "wall":
-    if tryright=False:
+    if tryright==False:
       turn(1)
       tryright=True
     Else:
