@@ -28,4 +28,4 @@ def grid(rows, columns, width):
 
 
 polygon(4,200)
-grid(8,8,200)
+grid(10,4,200)
