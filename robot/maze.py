@@ -9,6 +9,10 @@ collision_1 = False
 collision_2=False
 while True:
   move()
+  if left_side() != "wall":
+    turn(-1)
+  if right_side() != "wall":
+    turn(1)
   if touch() == "wall" and collision_1 == False:
     turn(1)
     collision_1=True
@@ -21,10 +25,7 @@ while True:
   else:
     collision_1=False
     collision_2=False
-  if left_side() != "wall":
-    turn(-1)
-  if right_side() != "wall":
-    turn(1)
+  
   
   
 
