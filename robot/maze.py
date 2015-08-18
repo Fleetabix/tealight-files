@@ -5,9 +5,18 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
+collision = False
 
 while True:
   move()
-  if touch() == "wall":
+  if touch() == "wall" and collision == False:
     turn(1)
+    collision=True
+  else if touch() == "wall" and collision == True
+    turn(2)
+  else collision = False
+   
+    
+    
+    
     
