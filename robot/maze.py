@@ -12,9 +12,9 @@ while True:
   if touch() == "wall" and collision == False:
     turn(1)
     collision=True
-  elif touch() == "wall" and collision == True
+  elif touch() == "wall" and collision == True:
     turn(2)
-  end
+  
   
 
   
