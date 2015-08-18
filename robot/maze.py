@@ -17,10 +17,14 @@ while True:
     collision_1=False
     collision_2=True
   elif touch() == "wall" and collision_2==True:
-    turn(3)
+    turn(-1)
   else:
     collision_1=False
     collision_2=False
+  if left_side != "wall":
+    turn(-1)
+  if right_side != "wall":
+    turn(1)
   
   
 
