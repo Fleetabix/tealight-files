@@ -16,16 +16,16 @@ while True:
   elif right_side() != "wall" and left_side()=="wall":
     turn(1)
   elif right_side() != "wall" and left_side() != "wall":
-    'if tryright==False:
-    '  turn(1)
-    '  tryright=True
-    'elif tryleft==False:
-    '  turn(-1)
-    '  tryleft=True
-    'else:
-     ' turn(2)
-     ' tryright=False
-     ' tryleft=False
+    if tryright==False:
+    #  turn(1)
+    #  tryright=True
+    #elif tryleft==False:
+    #  turn(-1)
+    #  tryleft=True
+    #else:
+     # turn(2)
+     # tryright=False
+     # tryleft=False
     turn(-1)
     
     
