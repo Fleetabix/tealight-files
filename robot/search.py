@@ -15,4 +15,5 @@ while True:
     turn(2)
   
   turn(dir)
+  move()
   dir=-dir
