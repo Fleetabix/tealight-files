@@ -7,12 +7,19 @@ from tealight.robot import (move,
                             right_side)
 collision_1 = False
 collision_2=False
+tryright=False
 while True:
   move()
   if left_side() != "wall":
     turn(-1)
   if right_side() != "wall":
     turn(1)
+  if right_side() != "wall" and left_side() != "wall" and tryright=False:
+    turn(1)
+    tryright=True
+  elif right_side() != "wall" and left_side() != "wall" and tryright=True:
+    turn(-1)
+    tryright=False
   if touch() == "wall" and collision_1 == False:
     turn(1)
     collision_1=True
