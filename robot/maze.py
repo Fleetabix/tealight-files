@@ -16,10 +16,10 @@ while True:
     turn(1)
   elif right_side() != "wall" and left_side() != "wall":
     if tryright==False:
-      turn(1)
+      turn(-1)
       tryright=True
     else:
-      turn(-1)
+      turn(1)
       tryright=False
   if touch() == "wall" and collision_1 == False:
     turn(1)
