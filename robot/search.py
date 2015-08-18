@@ -13,6 +13,7 @@ while True:
   
   if touch() == "wall":
     turn(2)
+  if touch
   
   turn(dir)
   move()
