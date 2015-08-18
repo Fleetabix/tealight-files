@@ -8,6 +8,6 @@ from tealight.robot import (move,
 
 while True:
   move()
-  if touch == "wall":
+  if touch() == "wall":
     turn(1)
     
