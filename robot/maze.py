@@ -12,9 +12,9 @@ while True:
   move()
   if left_side() != "wall" and right_side()=="wall":
     turn(-1)
-  if right_side() != "wall" and left_side()=="wall":
+  elif right_side() != "wall" and left_side()=="wall":
     turn(1)
-  if right_side() != "wall" and left_side() != "wall":
+  elif right_side() != "wall" and left_side() != "wall":
     if tryright==False:
       turn(1)
       tryright=True
