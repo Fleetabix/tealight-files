@@ -26,7 +26,11 @@ while True:
       turn(2)
       tryright=False
       tryleft=False
-      
+    
+    
+    
+   
+   
   if touch() == "wall" and collision_1 == False:
     turn(1)
     collision_1=True
