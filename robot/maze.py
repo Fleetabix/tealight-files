@@ -21,9 +21,9 @@ while True:
   else:
     collision_1=False
     collision_2=False
-  if left_side != "wall":
+  if left_side() != "wall":
     turn(-1)
-  if right_side != "wall":
+  if right_side() != "wall":
     turn(1)
   
   
