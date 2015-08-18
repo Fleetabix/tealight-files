@@ -11,7 +11,7 @@ while True:
   move()
   if touch() == "wall" and collision_1 == False:
     turn(1)
-    collision=True
+    collision_1=True
   elif touch() == "wall" and collision_1 == True:
     turn(2)
     collision_1=False
