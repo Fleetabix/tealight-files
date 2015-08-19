@@ -28,6 +28,7 @@ def handle_keydown(key):
   elif key == "up":
     if y>screen_width / 2:
       ay = power-0.05
+      
     else:
       ay=power+0.05
   elif key == "down":
