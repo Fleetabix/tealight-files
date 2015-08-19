@@ -17,18 +17,25 @@ def handle_keydown(key):
 
   if key == "left":
     if x<screen_width / 2:
-      ax = -power+0.1
+      ax = -power+0.05
     else:
-      ax = -power-0.1
+      ax = -power-0.05
   elif key == "right":
     if x>screen_width / 2:
-      ax = power-0.1
+      ax = power-0.05
     else:
-      ax=power+0.1
+      ax=power+0.05
   elif key == "up":
-    ay = -power +0.1
+    if y>screen_width / 2:
+      ay = power-0.05
+    else:
+      ay=power+0.05
   elif key == "down":
-    ay = power+0.1
+    if y<screen_width / 2:
+      ay = -power-0.05
+    else:
+      ay=-power+0.05
+    
 
 def handle_keyup(key):
   global ax, ay
