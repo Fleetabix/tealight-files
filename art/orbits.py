@@ -38,9 +38,9 @@ def handle_keydown(key):
       ay=-power+0.05
     
 while True
-def handle_keyup(key):
-  global ax, ay
-  
+  def handle_keyup(key):
+    global ax, ay
+    
     if key == "left" or key == "right":
       if x<screen_width / 2:
         ax=.05
