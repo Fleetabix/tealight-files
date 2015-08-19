@@ -51,7 +51,10 @@ def handle_frame():
   
   ax=ax-0.001*(x-screen_width / 2)
   ay=ay-0.001*(y-screen_height / 2)
-  
+  if ax>1 or ax<-1:
+    ax=.1
+  if ay>1 or ay<-1:
+    ay=.1
   
   
   color("white")
