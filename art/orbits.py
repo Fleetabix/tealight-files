@@ -43,9 +43,9 @@ def handle_keyup(key):
 
   if key == "left" or key == "right":
     if x<screen_width / 2:
-      ax=.05
-    else:
       ax=-.05
+    else:
+      ax=+.05
   elif key == "up" or key == "down":
     if y<screen_width / 2:
       ay=-0.05
