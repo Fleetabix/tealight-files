@@ -40,17 +40,17 @@ def handle_keydown(key):
 
 def handle_keyup(key):
   global ax, ay
-
-  if key == "left" or key == "right":
-    if x<screen_width / 2:
-      ax=.05
-    else:
-      ax=-.05
-  elif key == "up" or key == "down":
-    if y<screen_width / 2:
-      ay=-0.05
-    else:
-      ay=0.05
+  while True
+    if key == "left" or key == "right":
+      if x<screen_width / 2:
+        ax=.05
+      else:
+        ax=-.05
+    elif key == "up" or key == "down":
+      if y<screen_width / 2:
+        ay=-0.05
+      else:
+        ay=0.05
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
