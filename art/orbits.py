@@ -54,6 +54,12 @@ def handle_keyup(key):
 def handle_frame():
   global x,y,vx,vy,ax,ay
   
+  
+  ax=ax-0.01*(x-screen_width / 2)
+  ay=ay-0.01*(y-screen_height / 2)
+  
+  
+  
   color("white")
   
   spot(x,y,8)
