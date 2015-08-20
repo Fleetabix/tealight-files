@@ -20,8 +20,7 @@ def NumberGen():
       if mines[i][j]==-1:
         for a in range (-1,1):
           for b in range (-1,1):
-            if mines[i+a][j+b]==-1:
-            else:
+            if mines[i+a][j+b]!=-1:
               mines[i+a][j+b]=mines[i+a][j+b]+1
               
       
