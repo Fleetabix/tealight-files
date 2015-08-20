@@ -14,7 +14,7 @@ def MineGen(MineNumber):
       mines[tempx][tempy]=1
       counter=counter+1
 
-for i in range(1,10):
+for i in range(0,10):
   mines[i] = [0] * 10   
 
 MineGen(10)
