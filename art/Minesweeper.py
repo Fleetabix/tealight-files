@@ -10,8 +10,8 @@ def MineGen(MineNumber):
       counter=counter+1
   
 def NumberGen():
-  for i in range (0,9):
-    for j in range (0,9):
+  for i in range (0,10):
+    for j in range (0,10):
       mineCount = 0
       #if mines[i][j]==-1:
        # for a in range (-1,1):
@@ -20,8 +20,8 @@ def NumberGen():
           #    if mines[i+a][j+b]!=-1:
            #     mines[i+a][j+b]=mines[i+a][j+b]+1
       if mines[i][j]!=-1:
-        for a in range (-1,1):
-          for b in range(-1,1):
+        for a in range (-1,2):
+          for b in range(-1,2):
             if verify(i,a,j,b)==True:
               if mines[i+a][j+b]==-1:
                 mineCount += 1
@@ -51,8 +51,6 @@ for i in range(0,10):
 covers = [[]] * 10 
 for i in range(0,10):
   covers[i] = [1] * 10 
-for i in range(-1,2):
-  print i
  
 
 #MineGen(50)
