@@ -38,7 +38,7 @@ def Extension(x,y):
           #uncoverCell(x+i,y+j)
               
               
-def verify(num1,num2,num3,num4):
+def verify(num1, num2, num3, num4):
   if (num1+num2<10) and (num1+num2>-1) and (num3+num4<10) and (num3+num4>-1):
     return True
   else:
