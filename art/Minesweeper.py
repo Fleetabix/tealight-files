@@ -19,9 +19,9 @@ for i in range(0,10):
 
 MineGen(10)
 
-for i in range(0,9):
-  for j in range (0,9):
-    print mines[i][j]
+#for i in range(0,9):
+ # for j in range (0,9):
+  #  print mines[i][j]
   
 
 
