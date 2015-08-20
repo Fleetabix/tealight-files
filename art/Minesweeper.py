@@ -29,7 +29,7 @@ for i in range(0,10):
   mines[i] = [0] * 10   
 
 MineGen(10)
-
+NumberGen()
 for i in range(0,9):
  for j in range (0,9):
   print mines[i][j]
