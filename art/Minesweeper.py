@@ -27,7 +27,7 @@ def NumberGen():
                # mineCount += 1
        # mines[i][j] = mineCount
             
-def Extension(x,y):
+#def Extension(x,y):
   #for i in range(-1,2):
     #for j in range (-1,2):
       #if verify(i,x,j,y)==True:
