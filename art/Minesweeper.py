@@ -36,7 +36,7 @@ for i in range(0,10):
 
 covers = [[]] * 10 
 for i in range(0,10):
-  covers[i] = [0] * 10 
+  covers[i] = [1] * 10 
 
  
 
