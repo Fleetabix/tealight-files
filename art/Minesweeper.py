@@ -19,8 +19,8 @@ def NumberGen():
               mines[i+a][j+b]=mines[i+a][j+b]+1
               
 def Extension(x,y):
-  for i in range(-1,1)
-    for i in range (-1,1)
+  for i in range(-1,1):
+    for i in range (-1,1):
       if mines[x+i][y+j]==0:
         uncoverCell(x+i,y+j)
         Extension(x+i,y+j)        
