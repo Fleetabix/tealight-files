@@ -28,8 +28,8 @@ def NumberGen():
        # mines[i][j] = mineCount
             
 def Extension(x,y):
-  for i in range(-1,2):
-    for j in range (-1,2):
+  #for i in range(-1,2):
+    #for j in range (-1,2):
       #if verify(i,x,j,y)==True:
         #if mines[x+i][y+j]==0:
           #uncoverCell(x+i,y+j)
