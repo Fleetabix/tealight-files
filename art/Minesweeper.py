@@ -15,17 +15,19 @@ def NumberGen():
       if mines[i][j]==-1:
         for a in range (-1,1):
           for b in range (-1,1):
-            if mines[i+a][j+b]!=-1:
-              mines[i+a][j+b]=mines[i+a][j+b]+1
+            if i+a<=9 and i+a>=0 and j+b<=9 and j+b>=0: 
+              if mines[i+a][j+b]!=-1:
+                mines[i+a][j+b]=mines[i+a][j+b]+1
               
 def Extension(x,y):
   for i in range(-1,1):
     for i in range (-1,1):
-      if mines[x+i][y+j]==0:
-        uncoverCell(x+i,y+j)
-        Extension(x+i,y+j)        
-      elif mines[x+i][y+j]>0:
-        uncoverCell(x+i,y+j)
+      if i+x<=9 and i+x>=0 and j+y<=9 and j+y>=0:
+        if mines[x+i][y+j]==0:
+          uncoverCell(x+i,y+j)
+          Extension(x+i,y+j)        
+        elif mines[x+i][y+j]>0:
+          uncoverCell(x+i,y+j)
               
               
               
