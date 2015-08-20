@@ -1,4 +1,4 @@
-import (random)
+From import (random)
 mines = [[]] * 10 
 
 for i in range(0,9):
