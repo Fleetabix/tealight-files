@@ -32,10 +32,10 @@ def Extension(x,y):
     for j in range (-1,2):
       if verify(i,x,j,y)==True:
         if mines[x+i][y+j]==0:
-          uncoverCell(x+i,y+j)
+          #uncoverCell(x+i,y+j)
           Extension(x+i,y+j)        
         elif mines[x+i][y+j]>0:
-          uncoverCell(x+i,y+j)
+          #uncoverCell(x+i,y+j)
               
               
 def verify(num1,num2,num3,num4):
