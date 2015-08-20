@@ -1,5 +1,5 @@
 import random
-mines = [[]*10] * 10 
+mines = [[]] * 11 
 
 
   
