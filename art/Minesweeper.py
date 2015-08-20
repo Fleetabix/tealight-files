@@ -1,1 +1,2 @@
-print "A new file!"
+def MineGen():
+  print "Hello World!"
