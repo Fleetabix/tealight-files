@@ -10,6 +10,6 @@ def MineGen(MineNumber):
       counter=counter+1
 
 MineGen(10)
-for i in range 0 to 9
+for i in range 0 to 9:
   for j in range 0 to 9
     print Mines(i,j)
