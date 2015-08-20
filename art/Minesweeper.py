@@ -12,6 +12,7 @@ def MineGen(MineNumber):
 def NumberGen():
   for i in range (0,9):
     for j in range (0,9):
+      mineCount = 0
       #if mines[i][j]==-1:
        # for a in range (-1,1):
         #  for b in range (-1,1):
@@ -23,7 +24,8 @@ def NumberGen():
           for b in range(-1,1):
             if verify(i,a,j,b)==True:
               if mines[i+a][j+b]==-1:
-                mines[i][j]=mines[i][j]+1
+                mineCount += 1
+        mines[i][j] = mineCount
             
 def Extension(x,y):
   for i in range(-1,1):
