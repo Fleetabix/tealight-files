@@ -6,8 +6,8 @@ mines = [[]] * 10
 def MineGen(MineNumber):
   counter=0
   while counter<MineNumber:
-    tempx=random.randint(1,9)
-    tempy=random.randint(1,9)
+    tempx=random.randint(1,8)
+    tempy=random.randint(1,8)
     if mines[tempx][tempy]!=1:
       mines[tempx][tempy]=1
       counter=counter+1
