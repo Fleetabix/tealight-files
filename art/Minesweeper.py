@@ -18,7 +18,7 @@ def NumberGen():
          #   if i+a<=9 and i+a>=0 and j+b<=9 and j+b>=0: 
           #    if mines[i+a][j+b]!=-1:
            #     mines[i+a][j+b]=mines[i+a][j+b]+1
-              
+      print "Hi"        
 def Extension(x,y):
   for i in range(-1,1):
     for i in range (-1,1):
