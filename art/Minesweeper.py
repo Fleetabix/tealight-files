@@ -21,14 +21,14 @@ def NumberGen():
       if mines[i][j]!=-1:
         for a in range (-1,1):
           for b in range(-1,1):
-            if (i+a)<=9 and (i+a)>=0 and (j+b)<=9 and (j+b)>=0:
+            if verify(i,a,j,b)==True:
               if mines[i+a][j+b]==-1:
                 mines[i][j]=mines[i][j]+1
             
 def Extension(x,y):
   for i in range(-1,1):
     for j in range (-1,1):
-      if (i+x)<=9 and (i+x)>=0 and (j+y)<=9 and (j+y)>=0:
+      if verify(i,x,j,y)==True:
         if mines[x+i][y+j]==0:
           uncoverCell(x+i,y+j)
           Extension(x+i,y+j)        
@@ -36,7 +36,11 @@ def Extension(x,y):
           uncoverCell(x+i,y+j)
               
               
-              
+def verifiy(num1,num2,num3,num4)
+  if (num1+num2<10) and (num1+num2>-1) and (num3+num4<10) and (num3+num4>-1):
+    return True
+  else:
+    return False
               
 mines = [[]] * 10 
 for i in range(0,10):
