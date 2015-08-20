@@ -6,7 +6,7 @@ mines = [[]] * 10
 def MineGen(MineNumber):
   counter=0
   while counter<MineNumber:
-    tempx=random.randint(0,9)
+    tempx=random.randint(0,8)
     tempy=random.randint(0,9)
     print tempx
     print tempy
