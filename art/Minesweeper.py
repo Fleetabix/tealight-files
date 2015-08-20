@@ -51,7 +51,7 @@ for i in range(0,10):
 covers = [[]] * 10 
 for i in range(0,10):
   covers[i] = [1] * 10 
-for i in range(-1,1)
+for i in range(-1,1):
   print i
  
 
