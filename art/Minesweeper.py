@@ -1,5 +1,5 @@
 import random
-mines = [[]] * 11 
+mines = [[]] * 10 
 
 
   
@@ -15,7 +15,7 @@ def MineGen(MineNumber):
       counter=counter+1
 
 for i in range(0,9):
-  mines[i] = [0] * 10    
+  mines[i] = [0] * 11    
 
 MineGen(10)
 
