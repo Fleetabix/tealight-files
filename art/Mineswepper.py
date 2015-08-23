@@ -7,7 +7,7 @@ a = startx
 b = starty
 global uncoveredCells
 uncoveredCells = 0
-mineNumber = 10
+mineNumber = 20
 global gameEnded
 gameEnded = 0
 #covers = [[]] * 10 # Placeholders for the two arrays of the map
